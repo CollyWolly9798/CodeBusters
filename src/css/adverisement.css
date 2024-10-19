@@ -1,66 +1,65 @@
 /* advertisement */
 .advertisement{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 40px ;
+}
+.paragraph{
+    min-width: 355px;
 }
 
-.paragraph{
+.advertisement-paragraph-part{
+    height: 102px;
+    border-radius: 12px;
+    background: #576F35;
+    padding: 3px 10px;
+    color: #FBFBFB;
     font-size: 48px;
     font-style: normal;
     font-weight: 600;
     line-height: 1.04;
     letter-spacing: -0.72px;
     text-transform: uppercase;
+    display: block;   
 }
 
 .advertisement-paragraph{
-    color: #FBFBFB;
-    border-radius: 12px;
-    background: #576F35;
-    padding: 3px 10px;
-    height: 102px;
-}
-
-.advertisement-paragraph-part{
     color: #141414;
-    display: block;
-    min-width: 335px;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.04;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;  
 }
-
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px){
     .advertisement{
         padding-top: 50px;
-        padding-bottom: 50px;
     }
-
-    .paragraph{
-        color: #FBFBFB;
+    .advertisement-paragraph-part{
+        height: 86px;
+        padding: 8px 16px;
         font-size: 64px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 1.09; 
+        line-height: 1.09;
         letter-spacing: -0.96px;
-        text-transform: uppercase;
     }
 
     .advertisement-paragraph{
-        padding: 8px 16px;
-        height: 86px;
+        font-size: 64px;
+        line-height: 1.09;
+        letter-spacing: -0.96px;
     }
-    
 }
-
-/* @media screen and (min-width: 1280px){
-    .paragraph{
+@media screen and (min-width: 1280px){
+    .advertisement-paragraph-part{
         font-size: 76px;
-        font-style: normal;
-        font-weight: 600;
         line-height: 1.05;
         letter-spacing: -1.14px;
-        text-transform: uppercase; 
+        padding-left: 13px;
+        display: inline-block; 
     }
 
-    .advertisement-paragraph{
-        padding-left: 13px;
-    }
-} */
+      .advertisement-paragraph{
+        font-size: 76px;
+        line-height: 1.05;
+        letter-spacing: -1.14px;
+      }
+}
