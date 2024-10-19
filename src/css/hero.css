@@ -1,1 +1,95 @@
 /* hero */
+.hero-section {
+    background-color: #576F35;
+    max-width: 375px;
+    background-image: url(../img/hero/hero-bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding-top: 100px;
+    padding-bottom: 370px;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .opening {
+                background-image: url(../img/hero/hero-bg-mobile@2x.jpg)
+            }
+        }
+}
+
+.hero-name {
+    font-weight: 600;
+    max-width: 335px;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    max-width: 335px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    color: #fbfbfb;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-section {
+    background-image: url(../img/hero/hero-bg-tablet.jpg);
+    padding-top: 122px;
+    padding-bottom: 589px;
+    max-width: 768px;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .opening {
+                max-width: 786px;
+                background-image: url(../img/hero/hero-bg-tablet@2x.jpg)
+            }
+        }
+    }
+ .hero-name {
+  max-width: 480px;
+  margin-bottom: 25px;
+ }
+
+ .hero-text {
+    max-width: 550px;
+ }
+}
+
+@media only screen and (min-width: 1280px) {
+    .hero-section {
+       background-image: url(../img/hero/hero-bg-desktop.jpg);
+       background-position: right;
+       max-width: 100%;
+       height: 800px;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .opening {
+                background-image: url(../img/hero/hero-bg-desktop@2x.jpg)
+            }
+        }
+}
+
+.hero-container {
+    padding-top: 154px;
+    }
+
+    .hero-name {
+        max-width: 304px;
+        max-height: 304px;
+        margin-bottom: 64px;
+    }
+    .hero-text {
+        max-width: 472px;
+        margin-top: 64px;
+    }
+}
