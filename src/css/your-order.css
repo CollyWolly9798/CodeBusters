@@ -154,6 +154,8 @@
     color: #fbfbfb;
     font-size: 24px;
     font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
 } 
 @media screen and (min-width: 768px) {
     .your-order-box {
@@ -219,6 +221,8 @@
     }
     .social-item:not(:last-child)::after {
         margin: 0 12px;
+        font-size: 32px;
+        line-height: 1;
     }
 }
 @media screen and (min-width: 1280px) {
