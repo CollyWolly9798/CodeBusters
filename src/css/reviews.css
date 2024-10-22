@@ -1,12 +1,7 @@
-/* reviews */
-
-.container-reviews {
+.section-reviews {
+  background-color: #fbfbfb;
   padding-top: 80px;
   padding-bottom: 80px;
-}
-
-.section-reviews {
-  background: #fbfbfb;
 }
 
 .reviews-title {
@@ -74,7 +69,7 @@
   padding-bottom: 8px;
 }
 
-@media (min-width: 335px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .custom-2,
   .custom-3 {
     display: none;
@@ -82,18 +77,20 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .container-reviews {
+  .section-reviews {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 
   .reviews-title {
+    font-size: 64px;
     line-height: 1;
     max-width: 553px;
     margin-bottom: 25px;
   }
 
   .reviews-desc {
+    font-size: 16px;
     line-height: 1.25;
     max-width: 553px;
     margin-bottom: 50px;
@@ -101,6 +98,16 @@
 
   .reviews-item {
     max-width: 343px;
+  }
+
+  .custom-caption {
+    font-size: 18px;
+    line-height: 1.1;
+  }
+
+  .custom-desc {
+    font-size: 16px;
+    line-height: 1.4;
   }
 }
 
