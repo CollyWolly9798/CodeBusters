@@ -8,40 +8,46 @@
             <p class="user-coments-text">Ordering <span class="coments-text-first">from us</span> is quick and easy! Fill out <span class="coments-text-second">the form</span> below and we will contact you !</p>
             <form class="user-coments-form">
                 <div class="inp-wrapper">
-                    <lable>
-                    <input class="user-coments-field"
-                           type="text"
-                           name="username"
-                           placeholder="Full Name"
-                           pattern="[A-Za-z\s]{3,20}"
-                           required >
-                    </lable>
-                    <lable>
-                    <input class="user-coments-field" 
-                           type="email" 
-                           name="user-email"
-                           placeholder="Email"
-                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                           title="enter correct data"
-                           required >
-                    </lable>
-                        <p class="text-valid">Succes!</p>
-                        <p class="text-invalid">Invalid email, try again</p>
+                    <div class="inp-wrapper-username">
+                        <lable>
+                        <input class="user-coments-field"
+                               type="text"
+                               name="username"
+                               placeholder="Full Name"
+                               pattern="[A-Za-z\s]{3,20}"
+                               required >
+                        </lable>
+                        <p class="text-valid inp-wrapper-username-text">Succes!</p>
+                        <p class="text-invalid inp-wrapper-username-text">Invalid username, try again</p>
+                    </div>
+                    <div class="inp-wrapper-email">
+                        <lable>
+                        <input class="user-coments-field" 
+                               type="email" 
+                               name="user-email"
+                               placeholder="Email"
+                               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                               title="enter correct data"
+                               required >
+                        </lable>
+                        <p class="text-valid inp-wrapper-email-text">Succes!</p>
+                        <p class="text-invalid inp-wrapper-email-text">Invalid email, try again</p>
+                    </div>
                     <textarea class="user-message" 
                               name="user-comment" 
-                              placeholder="Comment"></textarea>
+                              placeholder="Comment">Comment</textarea>
                 </div>
                     <button class="contacts-btn" type="submit">Send</button>
             </form>
         </div>
         <div class="order-social">
             <picture>
-                <source srcset="/img/your-order/order-desktop.png 1x, /img/your-order/order-desktop@2x.png 2x" media ="(min-width: 1280px)">
+                <source srcset="/img/your-order/order-desktop.png 1x, /img/your-order/order-desktop@2x.png 2x" media="(min-width: 1280px)">
                 <source srcset="/img/your-order/order-tablet.png 1x, /img/your-order/order-tablet@2x.png 2x" media="(min-width: 768px)">
                 <source srcset="/img/your-order/order-mobile.png 1x, /img/your-order/order-mobile@2x.png 2x" media="(max-width: 767px)">
                 <img class="order-social-pic" src="/img//your-order/order-mobile.png" alt="Make fresh fruit juice">
             </picture>
-            <p class="social-text ">Follow us on our social networks:</p>
+            <p class="social-text">Follow us on our social networks:</p>
             <ul class="social-list">
                 <li class="social-item">
                     <a class="order-social-link" href="https://www.instagram.com/goitclub/" target="_blank">instagram</a> 
@@ -56,3 +62,4 @@
         </div>
     </div>
 </section>
+
