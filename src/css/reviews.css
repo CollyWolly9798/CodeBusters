@@ -74,7 +74,7 @@
   padding-bottom: 8px;
 }
 
-@media (min-width: 335px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .custom-2,
   .custom-3 {
     display: none;
