@@ -9,19 +9,18 @@
             <form class="user-coments-form">
                 <div class="inp-wrapper">
                     <div class="inp-wrapper-username">
-                        <lable>
+                        <label for="username"></label>
                         <input class="user-coments-field"
                                type="text"
                                name="username"
                                placeholder="Full Name"
-                               pattern="[A-Za-z\s]{3,20}"
+                               pattern="[\p{L}\p{Zs}'\-]{1,50}"
                                required >
-                        </lable>
+                        <p class="text-valid inp-wrapper-username-text">Succes!</p>
+                        <p class="text-invalid inp-wrapper-username-text">Invalid username, try again</p>
                     </div>
-                    <p class="text-valid inp-wrapper-username-text">Succes!</p>
-                    <p class="text-invalid inp-wrapper-username-text">Invalid username, try again</p>
                     <div class="inp-wrapper-email">
-                        <lable>
+                        <label for="user-email"></label>
                         <input class="user-coments-field" 
                                type="email" 
                                name="user-email"
@@ -29,13 +28,12 @@
                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                                title="enter correct data"
                                required >
-                        </lable>
+                        <p class="text-valid inp-wrapper-email-text">Succes!</p>
+                        <p class="text-invalid inp-wrapper-email-text">Invalid email, try again</p>
                     </div>
-                    <p class="text-valid inp-wrapper-email-text">Succes!</p>
-                    <p class="text-invalid inp-wrapper-email-text">Invalid email, try again</p>
                     <textarea class="user-message" 
                               name="user-comment" 
-                              placeholder="Comment">Comment</textarea>
+                              placeholder="Comment"></textarea>
                 </div>
                     <button class="contacts-btn" type="submit">Send</button>
             </form>

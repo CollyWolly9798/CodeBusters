@@ -54,7 +54,7 @@
 .inp-wrapper-username-text,
 .inp-wrapper-email-text {
     position: absolute;
-    bottom: 2px;
+    bottom: 10px;
     left: 16px;
 }
 .user-coments-field {
@@ -66,7 +66,8 @@
     background-color: #fbfbfb;
     margin-bottom: 15px;
     outline: transparent;
-    transition: border-color 250ms cubic-bezier(.15,.8,.76,.28);
+    transition: border-color 250ms cubic-bezier(.15,.8,.76,.28),
+    margin-bottom 250ms cubic-bezier(.15,.8,.76,.28);
 }
 .user-message {
     border: 1px solid rgba(20, 20, 20, 0.2);
@@ -92,9 +93,11 @@
 }
 .user-coments-field:not(:placeholder-shown):valid {
     border-color: #3cbc81;
+    margin-bottom: 30px;
 }
 .user-coments-field:not(:placeholder-shown):invalid {
     border-color: #e74a3b;
+    margin-bottom: 30px;
 }
 .text-valid {
     display: none;
@@ -160,10 +163,12 @@
     letter-spacing: -0.01em;
     color: #fbfbfb;
     display: inline-block;
-    transition: transform 250ms cubic-bezier(.15,.8,.76,.28);
+    transition: transform 250ms cubic-bezier(.15,.8,.76,.28), 
+    font-size 250ms cubic-bezier(.15,.8,.76,.28);
 }
 .order-social-link:hover,
 .order-social-link:focus {
+    font-size: 25px;
     transform: scale(1,1);
 }
 .social-item:not(:last-child)::after {
