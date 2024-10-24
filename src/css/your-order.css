@@ -163,13 +163,11 @@
     letter-spacing: -0.01em;
     color: #fbfbfb;
     display: inline-block;
-    transition: transform 250ms cubic-bezier(.15,.8,.76,.28), 
-    font-size 250ms cubic-bezier(.15,.8,.76,.28);
+    transition:  color 250ms cubic-bezier(.15,.8,.76,.28);
 }
 .order-social-link:hover,
 .order-social-link:focus {
-    font-size: 25px;
-    transform: scale(1,1);
+    color: #e74a3b;
 }
 .social-item:not(:last-child)::after {
     content: '/';
