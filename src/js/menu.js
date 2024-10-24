@@ -6,6 +6,7 @@
     closeModalBtn: document.querySelector("[data-menu-close]"),
     // Додати атрибут data-menu на бекдроп модалки
     modal: document.querySelector("[data-menu]"),
+    backdrop: document.querySelector("[data-menu-backdrop]"),
   };
 
   refs.openModalBtn.addEventListener("click", toggleModal);
@@ -14,5 +15,6 @@
   function toggleModal() {
     // is-open це клас який буде додаватися/забиратися на бекдроп при натисканні на кнопки
     refs.modal.classList.toggle("is-open");
+    refs.backdrop.classList.toggle("is-open");
   }
 })();

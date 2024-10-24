@@ -1,11 +1,11 @@
 {
-  "name": "lazy-team",
+  "name": "codebusters",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/lazy-team/",
+    "build": "vite build --base=/codebusters/",
     "preview": "vite preview"
   },
   "devDependencies": {
