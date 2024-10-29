@@ -78,6 +78,7 @@
 
 .footer-contacts-address
 {
+    transition: transform 250ms ease-in-out;
     max-width: 179px;
 }
 
@@ -149,7 +150,7 @@
         transition: transform 250ms ease-in-out;
     }
 
-    .footer-section-link:hover, .footer-section-link:focus
+    .footer-section-link:hover, .footer-section-link:focus, .footer-contacts-address:focus, .footer-contacts-address:hover
     {
         transform: scale(1.1);
     }
@@ -192,7 +193,8 @@
         transition: color 250ms ease-in-out;
     }
 
-    .footer-privacy-link:hover, .footer-privacy-link:focus
+    .footer-privacy-link:hover, .footer-privacy-link:focus, .footer-contacts-address:hover,
+    .footer-contacts-address:focus
     {
         color: #fbfbfb;
     }
